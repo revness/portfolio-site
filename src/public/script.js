@@ -250,4 +250,4 @@ containerElem.addEventListener('click', () => {
 //start textyping rotation
 textTyping()
 
-console.log('hope this worksgo')
+console.log('hope this worksgos')
