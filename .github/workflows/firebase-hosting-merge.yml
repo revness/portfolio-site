@@ -16,3 +16,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CHAPPO_84F2C }}
           channelId: live
           projectId: chappo-84f2c
+          entryPoint: "." 
