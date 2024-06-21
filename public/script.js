@@ -15,13 +15,16 @@ const createCard = (type, data, i) => {
     cardElem.className = "card"
 
     const closeElem = document.createElement('div')
-    closeElem.innerText = '[x]'
-    closeElem.className = 'close-btn'
+    const spanElem = document.createElement('span')
+    spanElem.innerText = '[x]'
+    spanElem.className = 'close-btn'
+    closeElem.className = 'close-btn-wrapper'
+    closeElem.appendChild(spanElem)
     cardElem.appendChild(closeElem)
-    closeElem.addEventListener('click', () => {
+    spanElem.addEventListener('click', () => {
         elemz.removeChild(cardElem)
     },)
-    closeElem.addEventListener('touchstart', () => {
+    spanElem.addEventListener('touchstart', () => {
         elemz.removeChild(cardElem)
     }, { passive: false })
 

@@ -199,56 +199,22 @@ header {
 }
 
 .close-btn {
-  align-self: flex-end;
   font-weight: bold;
+}
+
+.close-btn:hover {
   transform: scale(1.2);
   transition: transform 0.7s;
 }
 
-// .tooltip {
-//   position: relative;
-//   text-decoration: none;
-//   color: black;
-//   cursor: pointer;
+.close-btn-wrapper {
+  width: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: end;
+  align-self: center;
+}
 
-//   &:--tooltip {
-//     content: "";
-//     border: solid transparent;
-//     border-bottom-color: gray;
-//     border-width: 5px;
-//     position: absolute;
-//     top: -11px;
-//     right: -9px;
-//     animation: cssAnimation 0s 5s forwards;
-//     visibility: hidden;
-//   }
-
-//   &:--tooltip-tip {
-//     content: attr(data-tooltip);
-//     position: absolute;
-//     min-width: 2em;
-//     font-weight: bold;
-//     line-height: 1.3em;
-//     margin: 0;
-//     background: gray;
-//     color: #fff;
-//     padding: 15px;
-//     border-radius: 5px;
-//     right: -80px;
-//     top: -60px;
-//     z-index: 1;
-//     font-size: 0.7em;
-//     animation: cssAnimation 0s 5s forwards;
-//     visibility: hidden;
-//   }
-// }
-
-// @keyframes cssAnimation {
-//   to {
-//     visibility: visible;
-//   }
-// }
-/* Base styles for tooltip */
 #tooltip {
   position: relative;
   text-decoration: none;
@@ -258,7 +224,6 @@ header {
   text-align: center;
 }
 
-/* Tooltip content */
 #tooltip::before {
   content: attr(data-tooltip);
   position: absolute;

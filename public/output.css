@@ -195,13 +195,22 @@ header {
 }
 
 .close-btn {
-  align-self: flex-end;
   font-weight: bold;
+}
+
+.close-btn:hover {
   transform: scale(1.2);
   transition: transform 0.7s;
 }
 
-/* Base styles for tooltip */
+.close-btn-wrapper {
+  width: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: end;
+  align-self: center;
+}
+
 #tooltip {
   position: relative;
   text-decoration: none;
@@ -211,7 +220,6 @@ header {
   text-align: center;
 }
 
-/* Tooltip content */
 #tooltip::before {
   content: attr(data-tooltip);
   position: absolute;
