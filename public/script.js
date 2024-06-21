@@ -57,7 +57,14 @@ const createCard = (type, data, i) => {
         cardElem.style.backgroundColor = cardInfo[i].bgColorVal || `${colorPalette[Math.floor(Math.random() * colorPalette.length)]}`
 
     }, { passive: false })
+    cardElem.addEventListener('touchstart', () => {
+        cardElem.style.backgroundColor = cardInfo[i].bgColorVal || `${colorPalette[Math.floor(Math.random() * colorPalette.length)]}`
+
+    }, { passive: false })
     cardElem.addEventListener('mouseleave', () => {
+        cardElem.style.backgroundColor = 'white'
+    }, { passive: false })
+    cardElem.addEventListener('touchend', () => {
         cardElem.style.backgroundColor = 'white'
     }, { passive: false })
 
