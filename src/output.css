@@ -1,0 +1,249 @@
+.highlight {
+  color: #fff;
+  background-color: #000;
+}
+
+.inverse::selection {
+  color: #000;
+  background-color: #b1ffec;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.cardType {
+  font-weight: 300;
+  font-size: 1em;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.container {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: FF Infra, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2;
+}
+body--dark-mode {
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+svg {
+  width: 24;
+  height: 24;
+  fill: currentcolor;
+}
+
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+
+header {
+  max-width: 900px;
+  margin: 160px;
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.card {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: #fff;
+  cursor: grab;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 6px;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#show {
+  animation-duration: 3s;
+  animation-name: show;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(-300%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+#blinker {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#hi5 {
+  animation: highfive 3s infinite;
+  cursor: pointer;
+}
+
+@keyframes highfive {
+  0% {
+    transform: scale(1);
+    display: inline-block;
+  }
+  50% {
+    transform: scale(1.4);
+    display: inline-block;
+  }
+  100% {
+    transform: scale(1);
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 1023px) {
+  header {
+    margin: 70px;
+  }
+  .card {
+    height: 200px;
+    width: 200px;
+    font-size: 0.8em;
+    padding: 5px;
+  }
+  h2 {
+    display: block;
+    font-size: 1.3em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+  }
+}
+.navigation {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.navigation:hover {
+  font-weight: bolder;
+  transform: scale(1.2);
+  transition: transform 0.7s;
+}
+
+.cardDivWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  width: 100%;
+  height: 100%;
+}
+
+#menuTitle {
+  display: flex;
+}
+
+.close-btn {
+  align-self: flex-end;
+  font-weight: bold;
+  transform: scale(1.2);
+  transition: transform 0.7s;
+}
+
+/* Base styles for tooltip */
+#tooltip {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  display: inline;
+  text-align: center;
+}
+
+/* Tooltip content */
+#tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  margin: auto;
+  background-color: f2f2f2;
+  font-weight: 600;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+  font-size: 0.8em;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  animation: tooltipFadeIn 7s forwards;
+  right: -75px;
+  top: -55px;
+}
+
+@keyframes tooltipFadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 0.9;
+    visibility: visible;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
