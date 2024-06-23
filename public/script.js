@@ -188,6 +188,21 @@ const createCard = (type, data, i) => {
 
             }
         )
+    } else if (type == "About") {
+        const cardH2a = document.createElement('h2')
+        cardH2a.className = "card__card-type"
+        cardH2a.innerText = type + ' ' + data.emoji
+        cardElem.appendChild(cardH2a)
+
+        const image = document.createElement('img')
+        image.src = './assets/chappo.svg'
+        image.id = 'svg'
+        cardElem.appendChild(image)
+
+        const cardP = document.createElement('p')
+        cardP.innerText = data.subtitle
+        cardElem.appendChild(cardP)
+
     }
 
     else {//make a h2 tags
@@ -201,6 +216,8 @@ const createCard = (type, data, i) => {
         cardP.innerText = data.subtitle
         const cardP2 = document.createElement('p')
         cardP2.innerText = data.year
+
+
 
         //append h1,px2 to cardElem
         cardElem.appendChild(cardH2a)

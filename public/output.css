@@ -19,11 +19,6 @@ h1 {
   unicode-bidi: isolate;
 }
 
-.cardType {
-  font-weight: 300;
-  font-size: 1em;
-}
-
 div {
   display: block;
   unicode-bidi: isolate;
@@ -92,6 +87,19 @@ header {
   gap: 0.5em;
   width: 100%;
   height: 100%;
+}
+.card__card-type {
+  font-weight: 300;
+  font-size: 1em;
+}
+
+#svg {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 9999px;
+  background-color: lightblue;
+  align-self: center;
+  padding: 2px;
 }
 
 #show {
@@ -250,6 +258,14 @@ header {
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
+  }
+  #svg {
+    height: 4rem;
+    width: 4rem;
+  }
+  .navigation {
+    font-weight: bold;
+    font-size: 1.2em;
   }
 }
 
