@@ -192,7 +192,7 @@ const createCard = (type, data, i) => {
 
     else {//make a h2 tags
         const cardH2a = document.createElement('h2')
-        cardH2a.className = "cardType"
+        cardH2a.className = "card__card-type"
         cardH2a.innerText = type + ' ' + data.emoji
         const cardH2 = document.createElement('h2')
         cardH2.innerText = data.title
