@@ -144,7 +144,7 @@ const createCard = (type, data, i) => {
     if (type == "Navigation") {
         console.log(data)
         const cardDivWrapper = document.createElement('div')
-        cardDivWrapper.className = 'cardDivWrapper'
+        cardDivWrapper.className = 'card__div-wrapper'
         const cardH2a = document.createElement('h2')
         cardH2a.innerText = type + ' ' + data.emoji
         cardDivWrapper.appendChild(cardH2a)
@@ -168,7 +168,7 @@ const createCard = (type, data, i) => {
 
     } else if (type == "Contact") {
         const cardDivWrapper = document.createElement('div')
-        cardDivWrapper.className = 'cardDivWrapper'
+        cardDivWrapper.className = 'card__div-wrapper'
         const cardH2a = document.createElement('h2')
         cardH2a.innerText = type + ' ' + data.emoji
         cardDivWrapper.appendChild(cardH2a)

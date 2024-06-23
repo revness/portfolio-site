@@ -7,7 +7,7 @@ const cardInfo = [
         data: {
             title: '_nology',
             subtitle: '12 week intensive developer training',
-            year: 'June 2024',
+            year: 'Commenced June 2024',
             emoji: '📚',
         },
         bgColorVal: null
@@ -17,7 +17,7 @@ const cardInfo = [
         data: {
             title: 'chappo.io',
             subtitle: 'this one counts right? portfolio website, built with scss and vanillaJs',
-            year: 'July 2024',
+            year: 'June 2024',
             emoji: '🖥️',
         },
         bgColorVal: null
@@ -36,7 +36,7 @@ const cardInfo = [
         type: 'Portfolio',
         data: {
             title: 'Project 1',
-            subtitle: 'developed a project that does xyz',
+            subtitle: 'developed a project that does xyz  with tech stack x y z',
             year: 2024,
             emoji: '🖥️',
         },
@@ -46,7 +46,7 @@ const cardInfo = [
         type: 'Portfolio',
         data: {
             title: 'Project 2',
-            subtitle: 'project that does zxy',
+            subtitle: 'project that does zxy  with tech stack x y z',
             year: 2023,
             emoji: '🖥️',
 
@@ -57,9 +57,30 @@ const cardInfo = [
         type: 'Portfolio',
         data: {
             title: 'Project 3',
-            subtitle: 'project that does yxz',
+            subtitle: 'project that does yxz with tech stack x y z',
             year: 2022,
             emoji: '🖥️',
+        },
+        bgColorVal: null
+    },
+    {
+        type: 'About',
+        data: {
+            title: 'About me',
+            subtitle: 'Based in beautiful Sydney, Australia. Currently a Pharmacist but looking to transition into a career in tech.',
+            year: 'Now',
+            emoji: '🙋🏻‍♂️',
+            image: ''
+        },
+        bgColorVal: null
+    },
+    {
+        type: 'Skills',
+        data: {
+            title: 'Tech stacks I code in:',
+            subtitle: 'CSS3 HTML5 Javascript Vue.js TailwindCSS Sass',
+            year: 'Now',
+            emoji: '📚',
         },
         bgColorVal: null
     },
@@ -71,7 +92,7 @@ const cardInfo = [
                 url: 'https://github.com/revness'
             }, {
                 name: 'LinkedIn',
-                url: 'https://www.linkedin.com'
+                url: 'https://www.linkedin.com/in/chapman-tang-733289295/'
             }, {
                 name: 'Chat',
                 url: '/chat'
@@ -83,7 +104,7 @@ const cardInfo = [
     {
         type: 'Navigation',
         data: {
-            links: ['Portfolio', 'Experience', 'Contact'],
+            links: ['About', 'Portfolio', 'Skills', 'Experience', 'Contact'],
             emoji: '🗺️',
             icon: '<ion-icon name="map"></ion-icon>'
         },

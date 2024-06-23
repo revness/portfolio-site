@@ -62,17 +62,6 @@ body--dark-mode {
   color: #000;
 }
 
-svg {
-  width: 24;
-  height: 24;
-  fill: currentcolor;
-}
-
-svg:not(:root) {
-  overflow-clip-margin: content-box;
-  overflow: hidden;
-}
-
 header {
   max-width: 900px;
   margin: 160px;
@@ -94,6 +83,15 @@ header {
   border-radius: 6px;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.card__div-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  width: 100%;
+  height: 100%;
 }
 
 #show {
@@ -149,58 +147,14 @@ header {
     display: inline-block;
   }
 }
-@media screen and (max-width: 1023px) {
-  header {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 60px;
-  }
-  .card {
-    height: 200px;
-    width: 200px;
-    font-size: 0.8em;
-    padding: 5px;
-  }
-  h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-  }
-  h2 {
-    display: block;
-    font-size: 1.3em;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-  }
-}
 .navigation {
   font-weight: bold;
   font-size: 1.5em;
 }
-
 .navigation:hover {
   font-weight: bolder;
   transform: scale(1.2);
   transition: transform 0.7s;
-}
-
-.cardDivWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-  width: 100%;
-  height: 100%;
 }
 
 #menuTitle {
@@ -232,7 +186,6 @@ header {
   display: inline;
   text-align: center;
 }
-
 #tooltip::before {
   content: attr(data-tooltip);
   position: absolute;
@@ -264,6 +217,39 @@ header {
   100% {
     opacity: 0.9;
     visibility: visible;
+  }
+}
+@media screen and (max-width: 1023px) {
+  header {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
+  }
+  .card {
+    height: 200px;
+    width: 200px;
+    font-size: 0.8em;
+    padding: 5px;
+  }
+  h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+  }
+  h2 {
+    display: block;
+    font-size: 1.3em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
   }
 }
 
