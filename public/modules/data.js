@@ -95,7 +95,7 @@ const cardInfo = [
                 url: 'https://www.linkedin.com/in/chapman-tang-733289295/'
             }, {
                 name: 'Chat',
-                url: '/chat'
+                url: 'mailto:hello@chappo.io?subject=👋%20Hi%20Chapman,%20I%27d%20like%20to%20hire%20you!'
             }],
             emoji: '🔗',
         },
