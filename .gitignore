@@ -10,6 +10,8 @@ firebase-debug.*.log*
 #README
 REQUIREMENTS_README.MD
 
+node_modules
+
 # Firebase cache
 .firebase/
 
