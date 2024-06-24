@@ -79,7 +79,7 @@ const cardInfo = [
         data: {
             title: 'Tech stacks I code in:',
             subtitle: 'CSS3 HTML5 Javascript Vue.js TailwindCSS Sass',
-            year: 'Now',
+            year: '',
             emoji: '📚',
         },
         bgColorVal: null
