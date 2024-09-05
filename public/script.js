@@ -211,6 +211,14 @@ const createCard = (type, data, i) => {
         cardH2a.innerText = type + ' ' + data.emoji
         const cardH2 = document.createElement('h2')
         cardH2.innerText = data.title
+        if (type == "Portfolio") {
+            cardH2.addEventListener('click', () => {
+                window.open(data.link)
+            }, false)
+            cardH2.addEventListener('touchstart', () => {
+                window.open(data.link)
+            }, { passive: false })
+        }
         //create a p tag
         const cardP = document.createElement('p')
         cardP.innerText = data.subtitle

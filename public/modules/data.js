@@ -19,6 +19,7 @@ const cardInfo = [
             subtitle: 'this one counts right? portfolio website, built with scss and vanillaJs',
             year: 'June 2024',
             emoji: '🖥️',
+            link: 'http://www.chappo.io'
         },
         bgColorVal: null
     },
@@ -35,20 +36,22 @@ const cardInfo = [
     {
         type: 'Portfolio',
         data: {
-            title: 'Project 1',
-            subtitle: 'developed a project that does xyz  with tech stack x y z',
-            year: 2024,
+            title: 'TODO API',
+            subtitle: 'Developed a backend REST Api in Java Spring for a todoAPP',
+            year: 'Aug 2024',
             emoji: '🖥️',
+            link: 'https://github.com/revness/todo_ui'
         },
         bgColorVal: null
     },
     {
         type: 'Portfolio',
         data: {
-            title: 'Project 2',
-            subtitle: 'project that does zxy  with tech stack x y z',
-            year: 2023,
+            title: 'TODO UI',
+            subtitle: 'A todo frontend written in react using Typescript and styled using tailwindCSS',
+            year: 'Aug 2024',
             emoji: '🖥️',
+            link: 'https://github.com/revness/todo_ui'
 
         },
         bgColorVal: null
@@ -56,10 +59,11 @@ const cardInfo = [
     {
         type: 'Portfolio',
         data: {
-            title: 'Project 3',
-            subtitle: 'project that does yxz with tech stack x y z',
-            year: 2022,
+            title: 'ECom website',
+            subtitle: 'An ecom website written in React JS, with backend using Google Firebase',
+            year: 'Aug 2024',
             emoji: '🖥️',
+            link: 'https://github.com/revness/eshop'
         },
         bgColorVal: null
     },
